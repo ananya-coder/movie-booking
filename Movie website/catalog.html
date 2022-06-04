@@ -1,0 +1,139 @@
+<html>
+    <title>
+        Movie Homepage
+    </title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <head>
+    <link rel="stylesheet" type="text/css" href="movie.css"> 
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+        </head>
+    <body style = "background-image: url('bg.jpg')">
+      
+        <div class="topnav">
+        <a class="active" href="#movietime"><img src="MOVIETIME.png"></a>
+        <a href="location.html">Location</a>
+        <a href="Login.html">Log In/ Sign Up</a>
+        <a href="#movie">Movies</a>
+        <input type="text" id="myInput" onkeyup="myFunction()" placeholder="Search for movies.." title="Type in a name">
+      </div>
+     
+
+      <ul id="myUL">
+        <li><a href="#">Spider-Man: No way Home</a></li>
+        <li><a href="#">Dune</a></li>
+        <li><a href="#">House of Gucci</a></li>
+        
+      </ul>
+      
+      <script>
+      function myFunction() {
+          var input, filter, ul, li, a, i, txtValue;
+          input = document.getElementById("myInput");
+          filter = input.value.toUpperCase();
+          ul = document.getElementById("myUL");
+          li = ul.getElementsByTagName("li");
+          for (i = 0; i < li.length; i++) {
+              a = li[i].getElementsByTagName("a")[0];
+              txtValue = a.textContent || a.innerText;
+              if (txtValue.toUpperCase().indexOf(filter) > -1) {
+                  li[i].style.display = "";
+              } else {
+                  li[i].style.display = "none";
+              }
+          }
+      }
+      </script>
+      
+      <h2> Movie Catalog</h2>
+
+      <div class = "row">
+      <div class = "col-2"><IMG BORDER="0" ALIGN="Left" SRC="share.jpg" width =200 height =200> </div>
+       <div class = "col-10"><h3><a href = #spiderman-no-way-home style = "color: #136CB2;">Spiderman - No- Way - Home</a>
+        <span style = "font-size: small;"> (2022)</span></h3>  
+
+        <p style = "color: rgba(0,0,0,0.6);">
+            <span style = "font-size: 85%;">UA</span>
+            <span style = "font-style: normal;">|</span>
+            <span style = "font-size: 85%;">2h 28min</span>
+            <span style = "font-style: normal;">|</span>
+            <span style = "font-size: 85%;">Action, Adventure, Sci-Fi</span>
+        </p>
+        <p style = "margin: 0.5em 0 0.75em; line-height: 140%; padding: 0;">When Dr. Strange`s spell to restore Spider-Man`s identity goes awry, Peter is forced to overcome his greatest challenge yet.</p>
+       <p style = "    color: rgba(0,0,0,0.6);">
+         Director:  <a href = "#John Watts" style = "color: #136CB2;"> John Watts</a>
+         <span style = "font-style: normal;">|</span>
+         Cast:  <a href = "#Tom Holland" style = "color: #136CB2;"> Tom Holland</a> 
+         ,
+         <a href = "#Zendaya" style = "color: #136CB2;"> Zendaya</a>
+         ,
+         <a href = "#Benedict Cumberbatch" style = "color: #136CB2;"> Benedict Cumberbatch</a>
+        </p>
+        </div>
+         <hr>
+        
+
+
+       
+          <div class = "col-2"><IMG BORDER="0" ALIGN="Left" SRC="dune.jpg" width =200 height =200 Padding = 100px > </div>
+            <div class = "col-10"><h3><a href = dun.html style = "color: #136CB2;">Dune</a>
+             <span style = "font-size: small;"> (2021)</span></h3>  
+     
+             <p style = "    color: rgba(0,0,0,0.6);">
+                 <span style = "font-size: 85%;">UA</span>
+                 <span style = "font-style: normal;">|</span>
+                 <span style = "font-size: 85%;">2h 35min</span>
+                 <span style = "font-style: normal;">|</span>
+                 <span style = "font-size: 85%;">Action, Adventure, Drama, Sci-Fi</span>
+             </p>
+             <p style = "margin: 0.5em 0 0.75em; line-height: 140%; padding: 0;">Feature adaptation of Frank Herbert`s science fiction novel, Dune revolves around Paul Atreides, who leads nomadic tribes in a battle to control the desert planet Arrakis.</p>
+            <p style = "    color: rgba(0,0,0,0.6);">
+              Director:  <a href = "#Denis Villeneuve" style = "color: #136CB2;"> Denis Villeneuve</a>
+              <span style = "font-style: normal;">|</span>
+              Cast:  <a href = "#Timothee Chalamet" style = "color: #136CB2;"> Timothée Chalamet</a> 
+              ,
+              <a href = "#Zendaya" style = "color: #136CB2;"> Zendaya</a>
+              ,
+              <a href = "#Rebecca Ferguson" style = "color: #136CB2;"> Rebecca Ferguson</a>
+             </p></div>
+             <hr>
+
+            
+             
+
+             
+              <div class = "col-2"><IMG BORDER="0" ALIGN="Left" SRC="OIP.jpg" width =200 height =200 Padding = 100px > </div>
+                <div class = "col-10"><h3><a href = #houseofgucci style = "color: #136CB2;">House Of Gucci</a>
+                 <span style = "font-size: small;"> (2021)</span></h3>  
+         
+                 <p style = "    color: rgba(0,0,0,0.6);">
+                     <span style = "font-size: 85%;">A</span>
+                     <span style = "font-style: normal;">|</span>
+                     <span style = "font-size: 85%;">2h 37min</span>
+                     <span style = "font-style: normal;">|</span>
+                     <span style = "font-size: 85%;">Biography, Crime, Drama </span>
+                 </p>
+                 <p style = "margin: 0.5em 0 0.75em; line-height: 140%; padding: 0;">When Patrizia Reggiani, an outsider from humble beginnings, marries into the Gucci family, her unbridled ambition triggers a reckless spiral of betrayal, decadence, revenge, and ultimately...murder.</p>
+                <p style = "    color: rgba(0,0,0,0.6);">
+                  Director:  <a href = "#Ridley Scott" style = "color: #136CB2;"> Ridley Scott</a>
+                  <span style = "font-style: normal;">|</span>
+                  Cast:  <a href = "#Lady Gaga" style = "color: #136CB2;"> Lady Gaga</a> 
+                  ,
+                  <a href = "#Adam Driver" style = "color: #136CB2;"> Adam Driver</a>
+                  ,
+                  <a href = "#Jared Leto" style = "color: #136CB2;"> Jared Leto</a>
+                 </p> 
+                 
+    </div>
+    <hr>
+    </div>
+
+    <div class="navbar" style = "overflow: hidden; background-color: #333; position: relative; bottom: 0; width: 100%">
+      <a style = "float: left; display: block; color: #f2f2f2; text-align: center; padding: 14px 16px; font-size: 17px;" href="feedback.html" >Feedback</a>
+      <a style = "float: left; display: block; color: #f2f2f2; text-align: center; padding: 14px 16px; font-size: 17px;" href="faq.html">FAQ</a>
+      <a style = "float: left; display: block; color: #f2f2f2; text-align: center; padding: 14px 16px; font-size: 17px;" href="contactus.html">Contact Us</a>
+      <a href="movie.html" style = "float: left; display: block; background-color: grey; color: white;text-align: center; padding: 14px 16px; font-size: 17px">Home</a>
+    
+     
+    </div>
+    </body>
+    </html>

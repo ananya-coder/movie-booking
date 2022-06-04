@@ -1,0 +1,52 @@
+.header {
+background-color: rgb(49, 46, 41);
+position: fixed;
+left: 0;
+right: 0;
+top: 5px;
+height: 30px;
+display: flex;
+align-items: center;
+box-shadow: 0 0 25px 0 black;
+}
+.header * {
+display: inline;
+}
+.header li {
+margin: 20px;
+}
+.header li a {
+color: rgb(241, 241, 248);
+text-decoration: none;
+}
+
+.cities
+{
+    overflow: hidden;
+}
+
+.cities.currentcity
+{
+    margin-bottom: 18px;
+}
+
+.cities.currentcity.ul.li
+{
+    float: left;
+    width: 20%;
+    margin-bottom: 10px;
+}
+
+.cities.currentcity.ul.li.a
+{
+    color: #f44336;
+}
+
+.search.img
+{
+    width: 16px;
+    height: 17px;
+    position: absolute;
+    top: 12px;
+    left: 12px;
+}

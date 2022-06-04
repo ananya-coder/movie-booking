@@ -1,0 +1,151 @@
+<html>
+    <head>
+        <link rel="stylesheet" type="text/css" href="movie.css"> 
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    </head>
+<body>
+    <div class="topnav">
+        <a class="active" href="#movietime"><img src="MOVIETIME.png"></a>
+        <a href="location.html">Location</a>
+        <a href="Login.html">Log In/ Sign Up</a>
+        <a href="catalog.html">Movies</a>
+       
+      </div>
+   <br>
+     
+<div id = "movie_container" style = "background-image: url(dune12.jfif); height: 200" class= "container- movie">
+ 
+    <div class = "col-2"><IMG BORDER="0" ALIGN="Left" SRC="dune.jpg" width =200 height =200 Padding = 100px > </div>
+        <div class = "col-10"><h3><a href = #dune style = "color: #136CB2;">Dune</a>
+         <span style = "font-size: small;"> (2021)</span></h3>  
+ 
+         <p style = "    color: rgba(255, 255, 255, 0.6);">
+             <span style = "font-size: 95%;">UA</span>
+             <span style = "font-style: normal;">|</span>
+             <span style = "font-size: 95%;">2h 35min</span>
+             <span style = "font-style: normal;">|</span>
+             <span style = "font-size: 95%;">Action, Adventure, Drama, Sci-Fi</span>
+         </p>
+         <p style = "margin: 0.5em 0 0.75em; line-height: 140%; padding: 0; color: rgba(255, 255, 255, 0.6);">Feature adaptation of Frank Herbert`s science fiction novel, Dune revolves around Paul Atreides, who leads nomadic tribes in a battle to control the desert planet Arrakis.</p>
+        <p style = "    color: rgba(255, 255, 255, 0.6);">
+          Director:  <a href = "#Denis Villeneuve" style = "color: #136CB2;"> Denis Villeneuve</a>
+          <span style = "font-style: normal;">|</span>
+          Cast:  <a href = "#Timothee Chalamet" style = "color: #136CB2;"> Timothée Chalamet</a> 
+          ,
+          <a href = "#Zendaya" style = "color: #136CB2;"> Zendaya</a>
+          ,
+          <a href = "#Rebecca Ferguson" style = "color: #136CB2;"> Rebecca Ferguson</a>
+         </p></div>
+         <hr>
+
+         <div class = "section">
+             <div class = "content">
+                 <div id = "theatre">
+                     <div class = "tab">
+                         <ul id = "Show">
+                             <li class = "ui">
+                                <a href="#" >
+                                    <span class = "day">Today</span>                                     
+                                    <span class = "date">23</span>
+                                </a>
+                             </li>
+                             <li class = "uf">
+                                <a href="#" >
+                                    <span class = "day">Sunday</span>                                     
+                                    <span class = "date">24</span>
+                                </a>
+                             </li>
+                             <li class = "uf">
+                                <a href="#" >
+                                    <span class = "day">Monday</span>                                     
+                                    <span class = "date">25</span>
+                                </a>
+                             </li>
+                             <li class = "uf">
+                                <a href="#" >
+                                    <span class = "day">Tuesday</span>                                     
+                                    <span class = "date">26</span>
+                                </a>
+                             </li>
+                         </ul>
+                     </div>
+                     <div>
+                        <input type="text" id="myInput" onkeyup="myFunction()" placeholder="Search for theatres.." title="Type in a name">
+                     </div>
+                     <div class = "theatre">
+                         <div class = "list">
+                             <div class = "entity">
+                                 <h5>Cinemax Infiniti Malad </h5>
+                                 <p>Malad</p>
+                                 <hr>
+                             </div>
+                         </div>
+                     </div>
+                     <div class = "timing">
+                         <ul>
+                             <li>
+                                <a href="#">07:00 PM</a>
+                                 <div class=" qti">
+                                     <h5 style = "font-size: 14px;">Screen</h5>
+                                     <table class="tn-table" style="margin-top: 10px;">
+                                        <tbody><tr><td>PRIME
+                                        </td><td class="tn-red " > ₹250     
+                                        </td><td class="tn-yellow"> Available</td></tr></tbody></table>
+                                 </div>
+                             </li>
+                         </ul>
+                     </div>
+<br>
+<br>
+<br>
+<br>
+                     <div class = "theatre">
+                        <div class = "list">
+                            <div class = "entity">
+                                <h5>Fun Cinemas </h5>
+                                <p>Chembur</p>
+                                <hr>
+                            </div>
+                        </div>
+                    </div>
+                    <div class = "timing">
+                        <ul>
+                            <li>
+                               <a href="#">03:15 AM</a>
+                                <div class=" qti">
+                                    <h5 style = "font-size: 14px;">Screen</h5>
+                                    <table class="tn-table" style="margin-top: 10px;">
+                                       <tbody><tr><td>PRIME
+                                       </td><td class="tn-red " > ₹250     
+                                       </td><td class="tn-yellow"> Available</td></tr></tbody></table>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                 </div>
+             </div>
+         </div>
+</div>
+
+<script>
+    function myFunction() {
+        var input, filter, ul, li, a, i, txtValue;
+        input = document.getElementById("myInput");
+        filter = input.value.toUpperCase();
+        ul = document.getElementById("myUL");
+        li = ul.getElementsByTagName("li");
+        for (i = 0; i < li.length; i++) {
+            a = li[i].getElementsByTagName("a")[0];
+            txtValue = a.textContent || a.innerText;
+            if (txtValue.toUpperCase().indexOf(filter) > -1) {
+                li[i].style.display = "";
+            } else {
+                li[i].style.display = "none";
+            }
+        }
+    }
+    </script>
+
+
+</body>
+</html>
